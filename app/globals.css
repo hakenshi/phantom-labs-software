@@ -126,3 +126,7 @@
 .button-effect:hover {
   box-shadow: 0 0 15px var(--color-sky-500);
 }
+
+html{
+  scroll-behavior: smooth;
+}

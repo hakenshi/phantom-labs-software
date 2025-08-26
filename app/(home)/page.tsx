@@ -7,11 +7,11 @@ import ContactSection from '@/components/sections/ContactSection'
 export default function HomePage() {
   return (
     <div className="min-h-screen relative overflow-hidden space-y-20">
-      <HeroSection />
-      <ServicesSection />
-      <AboutSection />
-      <PortfolioSection />
-      <ContactSection />
+      <HeroSection id='hero' />
+      <ServicesSection id='services' />
+      <AboutSection id='about-us' />
+      <PortfolioSection id='portfolio' />
+      <ContactSection id='contact' />
     </div>
   )
 }

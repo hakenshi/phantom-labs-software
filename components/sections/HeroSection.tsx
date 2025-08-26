@@ -1,6 +1,13 @@
-export default function HeroSection() {
+
+interface HeroSectionProps {
+  id?: string
+}
+
+export default function HeroSection({id} : HeroSectionProps) {
   return (
-    <section className="relative z-10 pt-32 min-h-screen flex items-center justify-center">
+
+
+    <section id={id} className="relative z-10 pt-32 min-h-screen flex items-center justify-center">
       <div className="text-center space-y-8 px-6">
         <div className="text-6xl md:text-7xl font-black space-y-4 uppercase">
           <h1 className="text-white">Phantom Labs</h1>
