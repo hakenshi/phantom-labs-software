@@ -5,7 +5,7 @@ export default function HomeLayout({children}: PropsWithChildren) {
   return (
     <>
         <Header />
-        <main>
+        <main className="w-full h-screen">
             {children}
         </main>
     </>

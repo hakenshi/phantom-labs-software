@@ -25,8 +25,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-b from-zinc-800 to-zinc-950 min-h-screen text-white flex`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-950 min-h-screen text-white`}
       >
+        {/* Gradiente borrado de fundo */}
+        {/* <div className="inset-0 bg-gradient-to-br from-sky-400/10 via-purple-500/20 to-sky-600/30 blur-3xl scale-110" /> */}
+        <div className="absolute inset-0 bg-gradient-to-tl from-primary/20 via-sky-600/15 to-secondary/20 blur-2xl -z-10" />
+        <div className="absolute inset-0 bg-zinc-slate/20 backdrop-blur-sm -z-10" />
         {children}
       </body>
     </html>

@@ -118,3 +118,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.button-effect{
+  transition: box-shadow 0.3s;
+}
+
+.button-effect:hover {
+  box-shadow: 0 0 15px var(--color-sky-500);
+}
