@@ -41,7 +41,7 @@ export default function ServicesSection({id} : ServicesSectionProps) {
         </div>
         <div className="grid md:grid-cols-4 gap-8">
           {services.map((service, index) => (
-          <Card key={index} className="border-gray-800/50 hover:border-gray-700/50 transition-colors group bg-gradient-to-t from-gray-900 to-transparent flex">
+          <Card key={index} className="border-gray-800/50 hover:border-gray-700/50 transition-colors group bg-gradient-to-t from-gray-400 to-transparent flex">
             <CardHeader>
               <div className="h-12 w-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
                 <service.icon className="h-6 w-6 text-accent" />

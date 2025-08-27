@@ -1,4 +1,4 @@
-interface SectionProps {
+interface SectionProps extends React.SelectHTMLAttributes<HTMLElement> {
   children: React.ReactNode
   className?: string
   background?: 'default' | 'blur' | 'transparent'

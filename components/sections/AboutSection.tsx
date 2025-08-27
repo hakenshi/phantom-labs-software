@@ -1,8 +1,8 @@
 import Section from '@/components/ui/section'
 
-export default function AboutSection() {
+export default function AboutSection({id} : {id?: string}) {
   return (
-    <Section background="blur">
+    <Section id={id} background="blur">
       <h3 className="text-4xl font-bold text-center mb-16 text-white">
         About <span className="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text"> Us</span>
       </h3>

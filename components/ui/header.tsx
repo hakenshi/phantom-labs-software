@@ -10,7 +10,7 @@ import MobileNavigator from "./mobile-navigator"
 
 export default function Header() {
     const [open, setOpen] = useState(false);
- 
+
     return (
         <header className="p-6 rounded-2xl border-gray-800 border bg-black/10  backdrop-blur-md w-[98%] h-auto mx-auto fixed z-50 top-5 left-1/2 transform -translate-x-1/2 font-bold">
             <nav className="flex justify-between items-center h-full">
@@ -28,11 +28,11 @@ export default function Header() {
                     <span className="relative z-10">Let's chat</span>
                 </Button>
                 <div className="md:hidden flex">
-                    {!open ? <Menu className="cursor-pointer" onClick={() => setOpen(!open)}/> : 
-                        <X className="cursor-pointer" onClick={() => setOpen(!open)}/>}
+                    {!open ? <Menu className="cursor-pointer" onClick={() => setOpen(!open)} /> :
+                        <X className="cursor-pointer" onClick={() => setOpen(!open)} />}
                 </div>
             </nav>
-           <MobileNavigator open={open} setOpen={setOpen}/>
+            <MobileNavigator open={open} setOpen={setOpen} />
         </header>
     )
 }
