@@ -8,11 +8,7 @@ import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import MobileNavigator from "./mobile-navigator"
 
-
-
 export default function Header() {
-
-
     const [open, setOpen] = useState(false);
  
     return (
@@ -23,9 +19,9 @@ export default function Header() {
                     <span>Phantom Labs</span>
                 </Link>
                 <div className="hidden md:flex gap-5">
-                    <Link className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"#about-us"}>About us</Link>
-                    <Link className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"#portfolio"}>Projects</Link>
                     <Link className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"#services"}>Services</Link>
+                    <Link className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"#about"}>About</Link>
+                    <Link className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"#projects"}>Projects</Link>
                     <Link className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"#contact"}>Contact</Link>
                 </div>
                 <Button className="rounded-full button-effect hidden md:flex" variant="gradient">
