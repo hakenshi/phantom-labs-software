@@ -18,19 +18,11 @@ export default function Header() {
                     <Image className="rounded-lg size-10" src={"/logo.png"} width={72} height={72} alt="Phantom Labs Ghost Duck" />
                     <span>Phantom Labs</span>
                 </Link>
-<<<<<<< Updated upstream
                 <div className="hidden md:flex gap-5">
                     <Link className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"#services"}>Services</Link>
                     <Link className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"#about"}>About</Link>
                     <Link className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"#projects"}>Projects</Link>
                     <Link className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"#contact"}>Contact</Link>
-=======
-                <div className="flex gap-5">
-                    <Link className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"/"}>Services</Link>
-                    <Link className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"/"}>About</Link>
-                    <Link className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"/"}>Projects</Link>
-                    <Link className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"/"}>Contact</Link>
->>>>>>> Stashed changes
                 </div>
                 <Button className="rounded-full button-effect hidden md:flex" variant="gradient">
                     <span className="relative z-10">Let's chat</span>
