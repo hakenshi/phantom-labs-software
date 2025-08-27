@@ -1,17 +1,20 @@
-import Section from '@/components/ui/Section'
+import Section from '@/components/ui/section'
+import GridBackground from '@/components/ui/GridBackground'
+
 interface HeroSectionProps {
   id?: string
 }
 
-export default function HeroSection({id} : HeroSectionProps) {
+export default function HeroSection({ id }: HeroSectionProps) {
   return (
-    <Section className="pt-32 min-h-screen flex items-center justify-center">
-      <div className="text-center space-y-8 px-6">
+    <Section className="pt-32 min-h-screen flex items-center justify-center relative overflow-hidden">
+     
+      <div className="relative z-10 text-center space-y-8 px-6">
         <div className="text-6xl md:text-7xl font-black space-y-4 uppercase">
           <h1 className="text-white">Phantom Labs</h1>
           <h2 className="bg-gradient-to-r from-primary via-sky-600 to-secondary text-transparent bg-clip-text">SOFTWARE</h2>
         </div>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl text-white/40 max-w-2xl mx-auto leading-relaxed">
           We build websites and applications.<br />
           Focusing on UX/UI, Good Design, Clean Code and Fast Delivery
         </p>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import GridBackground from "@/components/ui/GridBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,12 +26,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-950 min-h-screen text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-900 min-h-screen text-white`}
       >
-        {/* Gradiente borrado de fundo */}
-        {/* <div className="inset-0 bg-gradient-to-br from-sky-400/10 via-purple-500/20 to-sky-600/30 blur-3xl scale-110" /> */}
-        <div className="absolute inset-0 bg-gradient-to-tl from-primary/20 via-sky-600/15 to-secondary/20 blur-2xl -z-10" />
-        <div className="absolute inset-0 bg-zinc-slate/20 backdrop-blur-sm -z-10" />
+        <div className="absolute inset-0 bg-linear-120 from-transparent via-primary/40 to-transparent blur-3xl z-0" />
+        <div className="absolute inset-0 bg-linear-120 from-transparent via-transparent to-secondary blur-3xl z-0" />
+        <div className="absolute -bottom-10 left-0 right-0 h-30 bg-slate-900 blur-2xl z-10" />
+        <GridBackground />
+        {/* <div className="absolute bottom-0 bg-black/20 blur-3xl z-10" /> */}
+        {/* <div className="absolute inset-0 blur-2xl -z-10 bg-black/10 backdrop-blur-2xl"></div> */}
+        {/* Transição borrada */}
         {children}
       </body>
     </html>
