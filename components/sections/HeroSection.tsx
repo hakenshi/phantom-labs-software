@@ -1,5 +1,6 @@
 import Section from '@/components/ui/Section'
 
+<<<<<<< Updated upstream
 interface HeroSectionProps {
   id?: string
 }
@@ -7,6 +8,11 @@ interface HeroSectionProps {
 export default function HeroSection({id} : HeroSectionProps) {
   return (
     <Section id={id} className="pt-32 min-h-screen flex items-center justify-center">
+=======
+export default function HeroSection() {
+  return (
+    <Section className="pt-32 min-h-screen flex items-center justify-center">
+>>>>>>> Stashed changes
       <div className="text-center space-y-8 px-6">
         <div className="text-6xl md:text-7xl font-black space-y-4 uppercase">
           <h1 className="text-white">Phantom Labs</h1>
