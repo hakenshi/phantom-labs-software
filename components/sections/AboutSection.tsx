@@ -7,7 +7,7 @@ export default function AboutSection({id} : {id?: string}) {
         About <span className="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text"> Us</span>
       </h3>
       <div className="grid md:grid-cols-3 gap-8">
-        <div className="text-gray-500 text-lg space-y-4">
+        <div className="text-gray-500 text-lg space-y-4 ">
           <p>
             We're a freelance agency that builds modern websites, web applications and mobile applications for startups, small businesses and enterprises.
           </p>
