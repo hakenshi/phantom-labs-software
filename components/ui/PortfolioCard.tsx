@@ -1,6 +1,8 @@
+'use client'
 import Image, { StaticImageData } from "next/image";
 import { Card, CardContent, CardFooter, CardHeader } from "./card";
 import { Button } from "./button";
+import { useState } from "react";
 
 interface PortfólioCardProps {
     image: StaticImageData
@@ -11,10 +13,14 @@ interface PortfólioCardProps {
 
 export default function PortfólioCard({ image, title, date }: PortfólioCardProps) {
 
+    const [dialog, setDialog] = useState<boolean>(false)
+    console.log(dialog)
+
     return (
         <Card className=" bg-black m-h-[380px] cursor-pointer p-0 border-none 
-        transition-all duration-500 relative z-10 hover:z-20 hover:scale-115 
-        hover:[&>img]:opacity-100 hover hover:[&_.content]:opacity-0 hover:[&_.footer]:opacity-100 hover:[&_.footer]:top-[102.5%]  ">
+        transition-all duration-500 relative z-10 hover:z-20 hover:scale-110
+        hover:[&>img]:opacity-100 hover:[&_.content]:opacity-0 
+        hover:[&_.footer]:opacity-100 hover:[&_.footer]:top-[102.5%] ">
             <Image
                     className="w-full h-full  opacity-40 hover:opacity-100"
                     src={image}
@@ -24,9 +30,9 @@ export default function PortfólioCard({ image, title, date }: PortfólioCardPro
             </CardContent>
 
             <CardFooter className="footer absolute flex items-center justify-between gap-3 w-full bg-gray-800 
-            rounded-b-md px-4 py-1 top-1/2 opacity-0 transition-all duration-300 ">
+            rounded-b-md px-4 py-1.5 top-1/2 opacity-0 transition-all duration-300 z-30 ">
                 <p className=" text-white text-sm">{date}</p>
-                <Button variant="gradient" >See More</Button>
+                <Button variant="gradient" size="sm" className="hover:scale-95" onClick={() => setDialog(true)} >See More</Button>
             </CardFooter>
          
         </Card>
