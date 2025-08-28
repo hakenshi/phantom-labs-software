@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Code, Palette, Smartphone, Zap } from "lucide-react";
+import Section from "../ui/section";
 
 const services = [
   {
@@ -31,7 +32,7 @@ interface ServicesSectionProps {
 
 export default function ServicesSection({id} : ServicesSectionProps) {
   return (
-    <section id={id} className="relative z-10 py-20 bg-gray/10 border-gray-900 backdrop-blur-sm">
+    <Section id={id} className="relative z-10 py-20 bg-gray/10 border-gray-900 backdrop-blur-sm">
       <div className="container mx-auto px-6 space-y-20">
         <div className="text-center space-y-6">
           <h3 className="text-4xl font-bold text-center text-white">
@@ -41,7 +42,7 @@ export default function ServicesSection({id} : ServicesSectionProps) {
         </div>
         <div className="grid md:grid-cols-4 gap-8">
           {services.map((service, index) => (
-          <Card key={index} className="border-gray-800/50 hover:border-gray-700/50 transition-colors group bg-gradient-to-t from-gray-800/90 to-transparent flex">
+          <Card key={index} className="border-gray-700/50 hover:border-gray-600/50 transition-colors group bg-gradient-to-t from-gray-800/90 to-transparent flex">
             <CardHeader>
               <div className="h-12 w-12 bg-sky-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-sky-500/20 transition-colors">
                 <service.icon className="h-6 w-6 text-sky-500" />
@@ -55,6 +56,6 @@ export default function ServicesSection({id} : ServicesSectionProps) {
         ))}
         </div>
       </div>
-    </section>
+    </Section>
   )
 }

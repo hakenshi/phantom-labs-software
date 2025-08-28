@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils"
+
 interface SectionProps extends React.SelectHTMLAttributes<HTMLElement> {
   children: React.ReactNode
   className?: string
@@ -5,11 +7,11 @@ interface SectionProps extends React.SelectHTMLAttributes<HTMLElement> {
   id?: string
 }
 
-export default function Section({ 
-  children, 
-  className = '', 
+export default function Section({
+  children,
+  className = '',
   background = 'default',
-  id 
+  id
 }: SectionProps) {
   const backgroundClasses = {
     default: 'relative z-10 py-20',
@@ -18,7 +20,7 @@ export default function Section({
   }
 
   return (
-    <section id={id} className={`${backgroundClasses[background]} ${className}`}>
+    <section id={id} className={cn(`${backgroundClasses[background]} ${className}`)}>
       <div className="container mx-auto px-6">
         {children}
       </div>

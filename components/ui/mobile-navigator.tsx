@@ -16,7 +16,7 @@ export default function MobileNavigator ({open}  : MobileNavigatorProps ) {
                     <a className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"#portfolio"} >Projects</a>
                     <a className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"#services"} >Services</a>
                     <a className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"#contact"} >Contact</a>
-                    <Button className="rounded-full button-effect" variant="gradient">
+                    <Button className="rounded-full button-effect" variant="outline">
                         <span className="relative z-10">Let's chat</span>
                     </Button>
                 </div>

@@ -15,8 +15,6 @@ interface PortfólioCardProps {
 
 export default function PortfólioCard({ image, title, date }: PortfólioCardProps) {
 
-    const [dialog, setDialog] = useState<boolean>(false)
-
     const description = " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident enim quia eos sunt harum repellat debitis natus hic maxime minus voluptatum dolore, totam, culpa laudantium cumque sequi. Commodi, fugiat consequuntur?"
 
     return (
@@ -37,13 +35,11 @@ export default function PortfólioCard({ image, title, date }: PortfólioCardPro
                 <p className=" text-white text-sm">{date}</p>
                 <Dialog>
                     <DialogTrigger asChild>
-                        <Button variant="gradient" size="sm" className="hover:scale-95" onClick={() => setDialog(true)} >See More</Button>
+                        <Button variant="outline" size="sm" className="hover:scale-95" >See More</Button>
                     </DialogTrigger>
                     <ProjectDetails title="Phantom Labs" image={image} description={description}/>
                 </Dialog>
             </CardFooter>
-           
-
         </Card>
     )
 }

@@ -24,7 +24,7 @@ export default function Header() {
                     <Link className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"#portfolio"}>Projects</Link>
                     <Link className="text-lg hover:scale-105 transition-transform ease-in duration-100" href={"#contact"}>Contact</Link>
                 </div>
-                <Button className="rounded-full button-effect hidden md:flex" variant="gradient">
+                <Button className="rounded-full button-effect hidden md:flex" variant="outline">
                     <span className="relative z-10">Let's chat</span>
                 </Button>
                 <div className="md:hidden flex">

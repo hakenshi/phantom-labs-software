@@ -6,7 +6,7 @@ import { Button } from "./button";
 interface ProjectDetailsProps {
     title: string
     image: StaticImageData
-    description : string
+    description: string
     projectLink?: string
 }
 
@@ -14,19 +14,18 @@ interface ProjectDetailsProps {
 export default function ProjectDetails({ title, image, description, projectLink }: ProjectDetailsProps) {
 
     return (
-        <DialogContent>
+        <DialogContent className="flex flex-col min-w-5xl">
             <DialogHeader>
                 <DialogTitle>{"Details of " + title}</DialogTitle>
                 <DialogDescription>Project Details</DialogDescription>
             </DialogHeader>
-            <div className="flex flex-col gap-3">
-                <Image src={image} alt="" className=""/>
-                <p>{description}</p>
+            <div className="grid grid-cols-2 gap-5">
+                <Image src={image} alt={`project ${title} image`} />
+                <p className="h-full">{description}</p>
             </div>
-            <DialogFooter>
-                <Button variant="gradient" size="sm" disabled={!projectLink} >Access Link</Button>
+            <DialogFooter className="col-span-1 row-span-1">
+                <Button variant="outline" size="sm" disabled={!projectLink} >Access Link</Button>
             </DialogFooter>
-
         </DialogContent>
     )
 }

@@ -1,4 +1,5 @@
 import { id } from "zod/v4/locales"
+import { Button } from '@/components/ui/button'
 
 interface ContactSectionProps {
   id?: string
@@ -13,9 +14,9 @@ export default function ContactSection({id} : ContactSectionProps) {
           Ready to <span className="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">Start</span>?
         </h3>
         <p className="text-xl text-gray-600 mb-8">Let's discuss your next project</p>
-        <button className="px-10 py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-semibold hover:scale-105 transition-transform shadow-xl">
+        <Button variant="outline" className="px-10 py-4 rounded-full font-semibold hover:scale-105 transition-transform shadow-xl">
           Contact Us
-        </button>
+        </Button>
       </div>
     </section>
   )
