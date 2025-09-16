@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import GridBackground from "@/components/ui/GridBackground";
+import ModernBackground from "@/components/ui/ModernBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,11 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-900 min-h-screen text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen text-white`}
       >
-        <div className="absolute inset-0 bg-linear-120 from-blue-950/50 via-primary/40 to-blue-900/90 blur-2xl z-0" />
-        <div className="absolute -bottom-30 left-0 right-0 w-screen h-40 bg-slate-900 blur-2xl z-10" />
-        <GridBackground />
+        <ModernBackground />
         {children}
       </body>
     </html>
